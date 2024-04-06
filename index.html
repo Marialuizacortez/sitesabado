@@ -5,28 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Site da Maria | Meu primeiro site </title>
     <link rel="shortcut icon" href="img/favicon.ico">
-     <!-- title - título   -->    
+    <link rel="stylesheet" href="css/estilo.css"
+         
 </head>
 
 <body> 
-    <header> <!-- cabeçalho-->
-        <nav>  <!--menu navegação-->
-             <ul>
-                <li> Home </li>   
-                <li> Projetos </li>
-                <li> Sobre </li>
-                <li> Contato </li>
+    <header class="header"> <!-- cabeçalho-->
+        <nav class="header-nav">  <!--menu navegação-->
+             <ul class="menu-principal">
+                <li class="menu-item"> Home </li>   
+                <li class="menu-item"> Projetos </li>   
+                <li class="menu-item"> Sobre </li>   
+                <li class="menu-item"> Contato </li>   
              </ul>
          </nav> <!--FIM nav-->
 
-         <div> <!-- div - divisória-->
+         <div class="header-brand"> <!-- div - divisória-->
+                <a href="#home">
              <a href="index.html">
-                <img src="img/logo.png" alt=" ">
+                <img src="img/logo.png" alt=" "class= "brand-logo">
              </a>          
-
          </div>
-    
-     </header> <!-- FIM cabeçalho--> 
-   
+
+        <div class="header-toggle">
+            <i id="toggleTheme" class="bi bi sun"> </i> <!-- Ícone modo Dark e Light Lua e Sol-->
+        </div>
+   </header> <!-- FIM cabeçalho-->
+
+   <!--Menu mobile-->
+     <nav>
+        <ul>
+            <li>
+                <a href="#home">
+                    <i> </i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#projetos">
+                    <i> </i>
+                    <span>Projetos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#Sobre">
+                    <i> </i>
+                    <span>Sobre</span>
+                </a>
+            </li>
+            <li>
+                <a href="#Contato">
+                    <i> </i>
+                    <span>Contato</span>
+                </a>
+            </li>
+            
+        </ul>   
+     </nav>
 </body>
 </html>  
+
