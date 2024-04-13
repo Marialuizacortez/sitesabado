@@ -5,63 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Site da Maria | Meu primeiro site </title>
     <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/estilo.css"
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
          
 </head>
 
 <body> 
     <header class="header"> <!-- cabeçalho-->
         <nav class="header-nav">  <!--menu navegação-->
-             <ul class="menu-principal">
-                <li class="menu-item"> Home </li>   
-                <li class="menu-item"> Projetos </li>   
-                <li class="menu-item"> Sobre </li>   
-                <li class="menu-item"> Contato </li>   
+             <ul class="menu menu-principal">
+                <li class="menu-item">
+                     <a href="#home" class="menu-link active ">
+                        <span class="menu-text"> Home </span>
+                     </a> 
+                 </li>   
+                
+                    <li class="menu-item">
+                         <a href="#projetos" class="menu-link">
+                            <span class="menu-text"> Projetos </span>
+                         </a> 
+                     </li> 
+                     
+                        <li class="menu-item">
+                             <a href="#sobre" class="menu-link">
+                                <span class="menu-text"> Sobre  </span>
+                             </a> 
+                         </li>     
+                    
+                            <li class="menu-item">
+                                 <a href="#contato" class="menu-link">
+                                    <span class="menu-text"> Contato </span>
+                                 </a> 
+                             </li>   
              </ul>
          </nav> <!--FIM nav-->
 
          <div class="header-brand"> <!-- div - divisória-->
                 <a href="#home">
-             <a href="index.html">
                 <img src="img/logo.png" alt=" "class= "brand-logo">
              </a>          
          </div>
 
         <div class="header-toggle">
-            <i id="toggleTheme" class="bi bi sun"> </i> <!-- Ícone modo Dark e Light Lua e Sol-->
+            <i id="toggleTheme" class="bi bi-sun"> </i> <!-- Ícone modo Dark e Light Lua e Sol-->
         </div>
    </header> <!-- FIM cabeçalho-->
 
    <!--Menu mobile-->
-     <nav>
-        <ul>
-            <li>
-                <a href="#home">
-                    <i> </i>
-                    <span>Home</span>
+     <nav id="nav-mobile">
+        <ul class="menu menu-mobile">
+            <li class="menu-item">
+                <a href="#home" class="menu-link active">
+                    <i class="menu-icon bi bi-house-door"> </i>
+                    <span class="menu-text"> Home </span>
                 </a>
             </li>
-            <li>
-                <a href="#projetos">
-                    <i> </i>
-                    <span>Projetos</span>
+             <li class="menu-item">
+                <a href="#projetos" class="menu-link">
+                    <i class="menu-icon bi bi-window-stack"> </i>
+                    <span class="menu-text"> Projetos </span>
                 </a>
             </li>
-            <li>
-                <a href="#Sobre">
-                    <i> </i>
-                    <span>Sobre</span>
+            <li class="menu-item">
+                <a href="#sobre" class="menu-link">
+                    <i class="menu-icon bi bi-person"> </i>
+                    <span class="menu-text"> Sobre </span>
                 </a>
             </li>
-            <li>
-                <a href="#Contato">
-                    <i> </i>
-                    <span>Contato</span>
+            <li class="menu-item">
+                <a href="#contato" class="menu-link">
+                    <i class="menu-icon bi bi-envelope"> </i>
+                    <span class="menu-text"> Contato </span>
                 </a>
             </li>
             
         </ul>   
      </nav>
+
+    <main id="Home">
+        <div class="main-content">
+            <h1> <b> Soluções Criativas & </b> Dev Front-End </h1>
+            <p> Maria Luiza Cortez, São Paulo - SP, Estudante de Dev Front-End</p>
+            <ul class="menu menu-social">
+                <li>
+                    <a href="https://github.com/Marialuizacortez" class="menu-link">
+                       <i class="menu-icon bi bi-github"></i> 
+                    </a>
+                </li>
+            <li>
+                <a href="https://www.instagram.com/marialuiza.cortez/" class="menu-link">
+                    <i class="menu-icon bi bi-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@marialuiza.cortez?lang=pt-BR" class="menu-link">
+                    <i class="menu icon bi bi-tiktok"></i>
+                </a>
+            </li>
+            </ul>
+            <a href="#projetos">
+                <button class="btn btn-primary">
+                    <span> Ver Projetos </span>
+                    <i class="bi bi-arrow-down-right"></i>
+                     </button>
+            </a>
+        </div>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/CcYaZybdQYc" title="Try Google Workspace For Free Today!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
 </body>
 </html>  
 
