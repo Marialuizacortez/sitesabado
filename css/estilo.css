@@ -162,7 +162,7 @@ height: 3.25rem; /*altura*/
 }
 .menu-mobile {
     width: 100vw;
-    position: fixed;
+    /* /*position: fixed; */
     bottom: 0;
     justify-content: space-between;
     border-top: 1px solid var(--primary-border-color);
@@ -191,14 +191,15 @@ height: 3.25rem; /*altura*/
     justify-content: center;
     align-items: center;
     gap: 0.625rem;
-    width: 100%;
-    padding: o.875rem 1.5rem;
+   /* width: 100%;*/  
+    padding: 0.875rem 1.5rem;
     background: transparent;
+    border: none;
     border-radius:5rem;
     transition: ease-in-out .3s;
     cursor: pointer;
     color: var(--primary-color);
-    box-shadow: 5px 5px 15px #56575A; 
+    
 
 }
 .btn:hover{
@@ -261,10 +262,71 @@ main {
     /**/
     border: 1px solid var(--secondary-border-color);
     /**/
-    border-radius: 1rem;
+    border-radius: 1rem;    
 }
 .tecnologias-logo {
     height: 2.4rem;
 }
-    
+ /*-----fim da seção Tecnologias*/
 
+/* Projetos*/
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.projetos-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.projeto-card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.cartao{
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: center;
+}
+.card-body{
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1rem;  
+}
+.card-descricao {
+    color: var(--title-color);
+}
+.card-list {
+    margin-left: 1.25rem;
+}
+.card-item {
+    list-style:disc;
+}
+.card-button, .descricao-button {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.card-button .btn{
+    padding: .65rem 1.25rem;
+}
+.card-button .btn span {
+    font-size: 1rem;
+}
+.card-body .tecnologias-item {
+    width: 4rem;
+    height: 4rem;
+}
+.card-body .tecnologias-logo {
+    height: 2rem;
+}
+.projetos .btn {
+    width: auto;
+    margin: auto;
+}
+/* fim projeto */
