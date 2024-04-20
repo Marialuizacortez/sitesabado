@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+/* definir tema do site*/
+:root, :root[data-theme= 'dark'] {
+    /* definir cores padrão em variável*/
+
+    --primary-color: #f0f0f0; /*cor textos*/
+    --primary-bg-color: #111217;/* BG = Background */
+    --secondary-bg-color:#28292E;
+    --primary-border-color: #28292E;
+    --secondary-border-color: #56575A;
+
+    /* definir cores padrão para os TEXTOS em variável*/
+    --title-color: #F0F0F0;
+    --text-color: #9a9a9c;
+    --link-color: #9a9a9c;
+    --icon-color: #C7C8C9;
+
+}
+
+:root [data-theme= 'light'] {
+
+    --primary-color: #0b0b0f;
+    --primary-bg-color: #e9e9e9;
+    --secondary-bg-color: #C7c8c9;
+    --primary-border-color: #C7c8c9;
+    --secondary-border-color: #9a9a9c;
+ 
+    --title-color: #0b0b0f;
+    --text-color: #28292E;
+    --link-color: #28292E;
+    --icon-color: #56575A;
+}
+
+html[data-theme= 'light'] .brand-logo {
+    filter: invert(1);
+}
+
+/* Reset de CSS
+   Padronizar Navegadores
+*/
+
+*{ 
+    margin: 0;
+    padding: 0;   
+    vertical-align:baseline;
+    list-style: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-bg-color) transparent;
+
+}
+
+body {
+    background: var(--primary-bg-color);
+    font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color); /*cor do texto */
+}
+ ::-webkit-scrollbar {
+    width: 0.5rem;
+ }
+ ::-webkit-scrollbar-track {
+    background-color: transparent;
+ }
+ ::-webkit-scrollbar-thumb {
+    background: var(--secondary-bg-color);
+    border-radius: 50rem;
+ }
+
+a {text-decoration: none;
+    color: var(--text-color)
+}
+a:hover {
+    color: var(--primary-color)
+}
+i {
+    color:var(--icon-color)
+}
+b {
+    font-weight:400;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight:200;
+}
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
+}
+h3 { 
+    font-size: 1.55rem;
+    text-align: left;
+}
+h4 {
+    color: var(--primary-color);
+    font-weight: 400;
+    font-size: 1.15rem;
+    text-align: left;
+}
+h1, h2, h3 { 
+    font-family: 'League Spartan', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    color: var(--title-color);
+    font-weight: 200;
+    }
+p, span, li {
+    font-size: 1rem;
+}
+p {
+    text-align: justify;
+}
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /*comprimento*/
+    padding: 0.5rem 1rem;
+    z-index: 2;    /*sobreposição*/
+}
+.header-toggle { 
+    display: flex;
+    justify-content: flex-end;
+}
+.header-brand .brand-logo {
+width: 3.25rem;  /*comprimento*/ /* 3,25rem = 52px */
+height: 3.25rem; /*altura*/ 
+}
+#toggleTheme {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: ease-in-out .4s;
+}
+
+.menu {
+    display: flex;
+    align-items: center; /* alinha itens */
+    background-color: var(--primary-bg-color) ;
+}
+.menu-principal {
+    gap: 1rem;
+}
+.menu-item{
+    width: 100%;
+}
+
+.menu-link{ /* item */
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.menu-link.active  .menu-icon,
+.menu-link.active .menu-text,  
+.menu-link:hover .menu-icon, 
+.menu-link:hover .menu-text {
+    color: var(--primary-color);
+}
+.menu-text{  /* TAG span */
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+.menu-mobile {
+    width: 100vw;
+    /* /*position: fixed; */
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1px solid var(--primary-border-color);
+}
+.menu-mobile  .menu-link {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+.menu-icon, .menu-text{
+    color: var(--text-color);
+}
+.menu-icon{
+    font-size: 1.5rem;
+}
+
+.header-nav{
+    display: none;
+}
+ /* ----------------- Fim CSS Menu --------------------------*/
+.menu-social{
+    gap: 1rem;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+   /* width: 100%;*/  
+      padding: 0.875rem 1.5rem;
+    background: transparent;
+    border: none;
+    border-radius:5rem;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+    color: var(--primary-color);
+    
+
+}
+.btn:hover{
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
+}
+.btn span, .btn i{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+.btn-primary span {
+    color: var(--primary-color);
+}
+    .btn-primary{
+        border: 1px solid var(--primary-color);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.video iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+/* Seção Tecnologias*/
+.tecnologias {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 6.25rem 1rem 2rem;
+    margin-top: -5.5rem;
+    background: var(--secondary-bg-color);
+}
+.tecnologias h2{
+    font-size: 2rem; /*sempre que estivermos trabalhando com texto utilizaremos font-size*/
+    text-transform: none;
+    letter-spacing: normal;
+    text-align: start;
+}
+.tecnologias-lista{
+    display: flex;
+    flex-flow: row wrap;
+    gap: .5rem; /*gap - espaço; espaçamento entre items*/
+}
+.tecnologias-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 4.8rem;
+    height: 4.8rem;
+    /**/
+    border: 1px solid var(--secondary-border-color);
+    /**/
+    border-radius: 1rem;    
+}
+.tecnologias-logo {
+    height: 2.4rem;
+}
+ /*-----fim da seção Tecnologias*/
+
+/* Projetos*/
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.projetos-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.projeto-card{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.cartao{
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: center;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    
+}
