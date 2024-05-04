@@ -10,17 +10,22 @@
     --primary-border-color: #28292E;
     --secondary-border-color: #56575A;*/
 
-    --primary-color: #f0f0f0;  /* cor textos */
-    --primary-bg-color: #171111;  /* BG = Background */
+    --primary-color: #fdfaeb;  /* cor textos */
+    --primary-bg-color: #3b3f49;  /* BG = Background */
     --secondary-bg-color: #28292E;
-    --primary-border-color: #28292E;
-    --secondary-border-color: #56575A;
+    --primary-border-color: #f3c6b9;
+    --secondary-border-color: #da9894;
         
     /* definir cores padrão para os TEXTOS em Variável */
-    --title-color: #F0F0F0;
+   /* --title-color: #fdfaeb;
     --text-color: #9a9a9c;
     --link-color:#9a9a9c;
-    --icon-color: #C7C8C9;
+    --icon-color: #C7C8C9; */
+    
+    --title-color: #fdfaeb;
+    --text-color: #9a9a9c;
+    --link-color:#9a9a9c;
+    --icon-color: #9a9a9a;
 } 
 
 :root [data-theme='light'] {
