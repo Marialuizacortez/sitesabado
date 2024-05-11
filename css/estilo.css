@@ -28,7 +28,7 @@
     --icon-color: #9a9a9a;
 } 
 
-:root [data-theme='light'] {
+:root[data-theme='light'] {
 
     --primary-color: #0b0b0f;
     --primary-bg-color: #e9e9e9;
